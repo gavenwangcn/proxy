@@ -1,0 +1,28 @@
+{
+    "addr": "0.0.0.0:80",
+    "confType": "zk",
+    "etcdAddrs": [
+        "http://localhost:2379"
+    ],
+    "prefix": "/gateway",
+    "zkAddrs":"localhost:2181",
+    "filers": [
+        "whitelist",
+        "blacklist",
+        "xforward",
+        "head",
+        "validation",
+        "custom-header"
+    ],
+    "maxConns": 512,
+    "maxConnDuration":  10,
+    "maxIdleConnDuration": 10,
+    "readBufferSize": 10240,
+    "writeBufferSize": 10240,
+    "readTimeout": 30,
+    "writeTimeout": 30,
+    "maxResponseBodySize": 104857600,
+    "enableProxyCheck": false,
+    "enablePPROF": true,
+    "pprofAddr": "0.0.0.0:9090"
+}
